@@ -1,0 +1,75 @@
+<!doctype html>
+<style>
+@font-face { font-family: InconsolataBuried; src: url(Inconsolata-buried.woff2); }
+@font-face { font-family: InconsolataCinema; src: url(Inconsolata-cinema.woff2); }
+@font-face { font-family: InconsolataClustal; src: url(Inconsolata-clustal.woff2); }
+@font-face { font-family: InconsolataClustal2; src: url(Inconsolata-clustal2.woff2); }
+@font-face { font-family: InconsolataHelix; src: url(Inconsolata-helix.woff2); }
+@font-face { font-family: InconsolataHydrophobicity; src: url(Inconsolata-hydrophobicity.woff2); }
+@font-face { font-family: InconsolataLesk; src: url(Inconsolata-lesk.woff2); }
+@font-face { font-family: InconsolataMae; src: url(Inconsolata-mae.woff2); }
+@font-face { font-family: InconsolataStrand; src: url(Inconsolata-strand.woff2); }
+@font-face { font-family: InconsolataTaylor; src: url(Inconsolata-taylor.woff2); }
+@font-face { font-family: InconsolataTurn; src: url(Inconsolata-turn.woff2); }
+@font-face { font-family: InconsolataZappo; src: url(Inconsolata-zappo.woff2); }
+
+.residues {
+  white-space: pre;
+}
+
+html {
+  background-color: #333;
+}
+
+#buried { font-family: InconsolataBuried; }
+#cinema { font-family: InconsolataCinema; }
+#clustal { font-family: InconsolataClustal; }
+#clustal2 { font-family: InconsolataClustal2; }
+#helix { font-family: InconsolataHelix; }
+#hydrophobicity { font-family: InconsolataHydrophobicity; }
+#lesk { font-family: InconsolataLesk; }
+#mae { font-family: InconsolataMae; }
+#strand { font-family: InconsolataStrand; }
+#taylor { font-family: InconsolataTaylor; }
+#turn { font-family: InconsolataTurn; }
+#zappo { font-family: InconsolataZappo; }
+</style>
+
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'buried')">buried</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'cinema')">cinema</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'clustal')">clustal</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'clustal2')">clustal2</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'helix')">helix</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'hydrophobicity')">hydrophobicity</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'lesk')">lesk</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'mae')">mae</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'strand')">strand</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'taylor')">taylor</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'turn')">turn</button>
+<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'zappo')">zappo</button>
+
+<div class="alignment-wrapper2"><span><span class="line">
+Q&nbsp;&nbsp;117&nbsp;<span class="residues">NWYDFGDFIQTTPGSGVPVVDSYYSLLMPILTLTRALTAESHVDTDLTKPYIKWDLLKYDFTEERLKLFDRYFKYWDQTY</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">      +    +  S            +         T                  +               F+      </span> <br>
+T&nbsp;1569&nbsp;<span class="residues">GKGKPQEEQGPSGSSKKASCSPADLQKVQEQCQAALQTPAWAECA---------SRVDLRPFLLDCMNSLCEFRG-----</span></span><br></span><span><span class="line">
+Q&nbsp;&nbsp;197&nbsp;<span class="residues">HPNCVNCLDDRCILHCA-NFNVLFSTV-------FPPTS-----------FGPLVRKIFVD-----------------GV</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">          + +      +     +           +               L                          </span> <br>
+T&nbsp;1649&nbsp;<span class="residues">--------SLQPLCKALQALGAACRSKGLQPPIWRNSSFCPLACPAYSTYTNCLPSCSPSCFDPDGRCEGARAPSSCAEG</span></span><br></span><span><span class="line">
+Q&nbsp;&nbsp;277&nbsp;<span class="residues">PFVVSTGYHFRELGV---VHNQDV--NLHSSRLSFKELLVYAAD-----------PAMHAASGNLLLDKR----------</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">          +   V     +                    +                  +  +  L+            </span> <br>
+T&nbsp;1729&nbsp;<span class="residues">CTCQPGYVLSKNKCVAKDQCSCRDAQGGSIPSGKSWVSSGCSQKCACTEGSIQCRAFHCPSRSHCKLNSNGNSNCVSEKS</span></span><br></span><span><span class="line">
+Q&nbsp;&nbsp;357&nbsp;<span class="residues">----TTC----FSVAAL---TNNVAFQTVKPGNFNKDFYDFAVSKGFFKEGSSVELKHFFFAQDGNAAISDYDYYRYNLP</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">            +   +           +                          L      +               + </span> <br>
+T&nbsp;1809&nbsp;<span class="residues">DQCSIFGGPHYRTFDRFSFGFRGRMTYVLIKTV-------------DELPDGVERLLVQARNKMYPPWNK--------VF</span></span><br></span><span><span class="line">
+Q&nbsp;&nbsp;437&nbsp;<span class="residues">T------MCDIRQLLFVVEVVDKYFDCYDGGCINANQVIVNNLDKSAGFPFNKWGKARLYYDSMSYEDQDALFAYTKRNV</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">       +                   Y         ++VNN   +  +                           +  +</span> <br>
+T&nbsp;1889&nbsp;<span class="residues">LQEIITTVYG-----------------YKVQLQRDLVLVVNNQKMAVPYK-------------------------PEDRL</span></span><br></span><span><span class="line">
+Q&nbsp;&nbsp;517&nbsp;<span class="residues">IPTITQ-MNL------KYAISAKNRA-----------RTVA--GVSIC-----STMTNR--------QFHQKL---LKSI</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">  ++     +               A              +  G           + N           +        S+</span> <br>
+T&nbsp;1969&nbsp;<span class="residues">RVSMQGQRLFLITDFEMVVSFDGRNAAVITLPSMYQGLVRGLCGNYDSDRRNEMMLPNGAITTNVDVFGNSWEVKTEDSV</span></span><br></span><span><span class="line">
+Q&nbsp;&nbsp;597&nbsp;<span class="residues">AATRGATVVIGTSKF---------------YGGWHNMLKTVYSDVENPHLMGWDYPKCDRAMPNMLRIMASLVLARKHTT</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">   R A  V +  K                          V  D +                          V      +</span> <br>
+T&nbsp;2049&nbsp;<span class="residues">LRFRRALQVEADGKEKETGSYRSECSQEQLALVNSTQACRVLVDPQ-------GPFAACHQTVAPEPFQEHCVSDLC-AS</span></span><br></span><span><span class="line">
+Q&nbsp;&nbsp;677&nbsp;<span class="residues">CCSLSHRFY---------------------RLANECAQV----LSEMVM----------CGGSL----YVKPGGTSSG</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">     H                           +    +     +                ++          G +S </span> <br>
+T&nbsp;2129&nbsp;<span class="residues">RDPKEHEELRCQVLSGYSITCQEAGIALAGWRDHTHCAMVCPANTVYQSCMTPCPESCANLAAPRDCEGPCVEGCASL</span></span><br></span></div>
