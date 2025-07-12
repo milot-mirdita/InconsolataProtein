@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from pathlib import Path, PurePosixPath
-import json
+import json, uuid
 from fontTools.ttLib import TTFont
 from fontTools.fontBuilder import FontBuilder
 from fontTools.colorLib.builder import buildCPAL, buildCOLR
@@ -9,7 +9,7 @@ from cu2qu.pens import Cu2QuPen
 
 SRC_FONT   = Path("Inconsolata-Regular.otf")
 SCHEMES    = Path("cleancolors.json")
-FONTNAME   = "InconsolataClustal2"
+FONTNAME   = "InconsolataProtein"
 BASE       = "clustal2"
 FALLBACK   = "#000000FF"
 OUT_WOFF   = f"{FONTNAME}.woff"
@@ -119,11 +119,39 @@ fb.setupNameTable({"familyName": FONTNAME, "styleName":"Regular"})
 for rec in src["name"].names:
     if rec.nameID == 0:
         fb.font["name"].names.append(rec)
+name = fb.font["name"]
+
+ENGLISH=0x0409
+def add_name(nameID, string, langID=ENGLISH):
+    # platform 3 = Windows, encID 1 = Unicode BMP
+    name.setName(string, nameID, 3, 1, langID)
+    # platform 1 = Macintosh, encID 0 = Roman
+    try:
+        mac_str = string.encode("mac_roman").decode("mac_roman")
+    except UnicodeEncodeError:
+        mac_str = string
+    name.setName(mac_str, nameID, 1, 0, 0)
+
+family      = FONTNAME
+style       = "Regular"
+unique_id   = f"{family}-{style}-{uuid.uuid4().hex[:6]}"
+version_str = "Version 1.0"
+
+add_name(1, family)               # Font Family
+add_name(2, style)                # Sub‑family
+add_name(3, unique_id)            # Unique ID
+add_name(4, f"{family} {style}")  # Full name
+add_name(5, version_str)          # Version
+add_name(6, f"{family}-{style}")  # PostScript name
 
 fb.font["CPAL"] = buildCPAL([[h2rgba(c) for c in pal] for pal in palettes])
 colr = buildCOLR(layers, version=0)
 colr.version = 0
 fb.font["COLR"] = colr
+
+fb.font.flavor=None
+fb.font.save(f"{FONTNAME}.ttf")
+print("✓", f"{FONTNAME}.ttf")
 
 fb.font.flavor="woff"
 fb.font.save(OUT_WOFF)
