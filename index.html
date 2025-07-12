@@ -1,18 +1,6 @@
 <!doctype html>
+<link rel=stylesheet href=InconsolataClustal2_palettes.css>
 <style>
-@font-face { font-family: InconsolataBuried; src: url(Inconsolata-buried.woff2); }
-@font-face { font-family: InconsolataCinema; src: url(Inconsolata-cinema.woff2); }
-@font-face { font-family: InconsolataClustal; src: url(Inconsolata-clustal.woff2); }
-@font-face { font-family: InconsolataClustal2; src: url(Inconsolata-clustal2.woff2); }
-@font-face { font-family: InconsolataHelix; src: url(Inconsolata-helix.woff2); }
-@font-face { font-family: InconsolataHydrophobicity; src: url(Inconsolata-hydrophobicity.woff2); }
-@font-face { font-family: InconsolataLesk; src: url(Inconsolata-lesk.woff2); }
-@font-face { font-family: InconsolataMae; src: url(Inconsolata-mae.woff2); }
-@font-face { font-family: InconsolataStrand; src: url(Inconsolata-strand.woff2); }
-@font-face { font-family: InconsolataTaylor; src: url(Inconsolata-taylor.woff2); }
-@font-face { font-family: InconsolataTurn; src: url(Inconsolata-turn.woff2); }
-@font-face { font-family: InconsolataZappo; src: url(Inconsolata-zappo.woff2); }
-
 .residues {
   white-space: pre;
 }
@@ -20,33 +8,35 @@
 html {
   background-color: #333;
 }
-
-#buried { font-family: InconsolataBuried; }
-#cinema { font-family: InconsolataCinema; }
-#clustal { font-family: InconsolataClustal; }
-#clustal2 { font-family: InconsolataClustal2; }
-#helix { font-family: InconsolataHelix; }
-#hydrophobicity { font-family: InconsolataHydrophobicity; }
-#lesk { font-family: InconsolataLesk; }
-#mae { font-family: InconsolataMae; }
-#strand { font-family: InconsolataStrand; }
-#taylor { font-family: InconsolataTaylor; }
-#turn { font-family: InconsolataTurn; }
-#zappo { font-family: InconsolataZappo; }
 </style>
 
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'buried')">buried</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'cinema')">cinema</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'clustal')">clustal</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'clustal2')">clustal2</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'helix')">helix</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'hydrophobicity')">hydrophobicity</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'lesk')">lesk</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'mae')">mae</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'strand')">strand</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'taylor')">taylor</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'turn')">turn</button>
-<button onclick="document.querySelectorAll('.residues').forEach(node => node.id = 'zappo')">zappo</button>
+<script>
+function color(event) {
+  let scheme = (typeof event === 'string' || event instanceof String) ? event : event.target.textContent;
+  console.log(scheme);
+  document
+    .querySelectorAll('.residues')
+    .forEach(
+      node => {
+        node.className = `residues ${scheme}`;
+      }
+    );
+  };
+</script>
+<body onload="color('clustal2')">
+
+<button onclick="color(event)">buried</button>
+<button onclick="color(event)">cinema</button>
+<button onclick="color(event)">clustal</button>
+<button onclick="color(event)">clustal2</button>
+<button onclick="color(event)">helix</button>
+<button onclick="color(event)">hydrophobicity</button>
+<button onclick="color(event)">lesk</button>
+<button onclick="color(event)">mae</button>
+<button onclick="color(event)">strand</button>
+<button onclick="color(event)">taylor</button>
+<button onclick="color(event)">turn</button>
+<button onclick="color(event)">zappo</button>
 
 <div class="alignment-wrapper2"><span><span class="line">
 Q&nbsp;&nbsp;117&nbsp;<span class="residues">NWYDFGDFIQTTPGSGVPVVDSYYSLLMPILTLTRALTAESHVDTDLTKPYIKWDLLKYDFTEERLKLFDRYFKYWDQTY</span> <br>
@@ -73,3 +63,4 @@ T&nbsp;2049&nbsp;<span class="residues">LRFRRALQVEADGKEKETGSYRSECSQEQLALVNSTQACR
 Q&nbsp;&nbsp;677&nbsp;<span class="residues">CCSLSHRFY---------------------RLANECAQV----LSEMVM----------CGGSL----YVKPGGTSSG</span> <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="residues">     H                           +    +     +                ++          G +S </span> <br>
 T&nbsp;2129&nbsp;<span class="residues">RDPKEHEELRCQVLSGYSITCQEAGIALAGWRDHTHCAMVCPANTVYQSCMTPCPESCANLAAPRDCEGPCVEGCASL</span></span><br></span></div>
+</body>
