@@ -1,16 +1,16 @@
-/* InconsolataProtein palettes */
+/* Protsolata palettes */
 @font-face {
-  font-family: 'InconsolataProtein';
-  src: url('./InconsolataProtein.woff') format('woff'), url('./InconsolataProtein.woff2') format('woff2');
+  font-family: 'Protsolata';
+  src: url('./Protsolata.woff') format('woff'), url('./Protsolata.woff2') format('woff2');
 }
 
 @font-palette-values --clustal2 {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
 }
 
 @font-palette-values --clustal2-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #80A0F0,
@@ -41,16 +41,16 @@
     25 #FFFFFF;
 }
 
-.clustal2              { font-family:'InconsolataProtein'; font-palette: --clustal2; }
-.clustal2-override     { font-family:'InconsolataProtein'; font-palette: --clustal2-override; }
+.clustal2              { font-family:'Protsolata'; font-palette: --clustal2; }
+.clustal2-override     { font-family:'Protsolata'; font-palette: --clustal2-override; }
 
 @font-palette-values --buried {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 1;
 }
 
 @font-palette-values --buried-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #00A35C,
@@ -81,16 +81,16 @@
     25 #00F10E;
 }
 
-.buried              { font-family:'InconsolataProtein'; font-palette: --buried; }
-.buried-override     { font-family:'InconsolataProtein'; font-palette: --buried-override; }
+.buried              { font-family:'Protsolata'; font-palette: --buried; }
+.buried-override     { font-family:'Protsolata'; font-palette: --buried-override; }
 
 @font-palette-values --cinema {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 2;
 }
 
 @font-palette-values --cinema-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #BBBBBB,
@@ -121,16 +121,16 @@
     25 #808080;
 }
 
-.cinema              { font-family:'InconsolataProtein'; font-palette: --cinema; }
-.cinema-override     { font-family:'InconsolataProtein'; font-palette: --cinema-override; }
+.cinema              { font-family:'Protsolata'; font-palette: --cinema; }
+.cinema-override     { font-family:'Protsolata'; font-palette: --cinema-override; }
 
 @font-palette-values --clustal {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 3;
 }
 
 @font-palette-values --clustal-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #FFA500,
@@ -161,16 +161,16 @@
     25 #FFFFFF;
 }
 
-.clustal              { font-family:'InconsolataProtein'; font-palette: --clustal; }
-.clustal-override     { font-family:'InconsolataProtein'; font-palette: --clustal-override; }
+.clustal              { font-family:'Protsolata'; font-palette: --clustal; }
+.clustal-override     { font-family:'Protsolata'; font-palette: --clustal-override; }
 
 @font-palette-values --helix {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 4;
 }
 
 @font-palette-values --helix-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #E718E7,
@@ -201,16 +201,16 @@
     25 #C936C9;
 }
 
-.helix              { font-family:'InconsolataProtein'; font-palette: --helix; }
-.helix-override     { font-family:'InconsolataProtein'; font-palette: --helix-override; }
+.helix              { font-family:'Protsolata'; font-palette: --helix; }
+.helix-override     { font-family:'Protsolata'; font-palette: --helix-override; }
 
 @font-palette-values --hydrophobicity {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 5;
 }
 
 @font-palette-values --hydrophobicity-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #AD0052,
@@ -241,16 +241,16 @@
     25 #0C00F3;
 }
 
-.hydrophobicity              { font-family:'InconsolataProtein'; font-palette: --hydrophobicity; }
-.hydrophobicity-override     { font-family:'InconsolataProtein'; font-palette: --hydrophobicity-override; }
+.hydrophobicity              { font-family:'Protsolata'; font-palette: --hydrophobicity; }
+.hydrophobicity-override     { font-family:'Protsolata'; font-palette: --hydrophobicity-override; }
 
 @font-palette-values --lesk {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 6;
 }
 
 @font-palette-values --lesk-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #FFA500,
@@ -281,16 +281,16 @@
     25 #FFFFFF;
 }
 
-.lesk              { font-family:'InconsolataProtein'; font-palette: --lesk; }
-.lesk-override     { font-family:'InconsolataProtein'; font-palette: --lesk-override; }
+.lesk              { font-family:'Protsolata'; font-palette: --lesk; }
+.lesk-override     { font-family:'Protsolata'; font-palette: --lesk-override; }
 
 @font-palette-values --mae {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 7;
 }
 
 @font-palette-values --mae-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #77DD88,
@@ -321,16 +321,16 @@
     25 #FFFFFF;
 }
 
-.mae              { font-family:'InconsolataProtein'; font-palette: --mae; }
-.mae-override     { font-family:'InconsolataProtein'; font-palette: --mae-override; }
+.mae              { font-family:'Protsolata'; font-palette: --mae; }
+.mae-override     { font-family:'Protsolata'; font-palette: --mae-override; }
 
 @font-palette-values --strand {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 8;
 }
 
 @font-palette-values --strand-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #5858A7,
@@ -361,16 +361,16 @@
     25 #4747B8;
 }
 
-.strand              { font-family:'InconsolataProtein'; font-palette: --strand; }
-.strand-override     { font-family:'InconsolataProtein'; font-palette: --strand-override; }
+.strand              { font-family:'Protsolata'; font-palette: --strand; }
+.strand-override     { font-family:'Protsolata'; font-palette: --strand-override; }
 
 @font-palette-values --taylor {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 9;
 }
 
 @font-palette-values --taylor-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #CCFF00,
@@ -401,16 +401,16 @@
     25 #FFFFFF;
 }
 
-.taylor              { font-family:'InconsolataProtein'; font-palette: --taylor; }
-.taylor-override     { font-family:'InconsolataProtein'; font-palette: --taylor-override; }
+.taylor              { font-family:'Protsolata'; font-palette: --taylor; }
+.taylor-override     { font-family:'Protsolata'; font-palette: --taylor-override; }
 
 @font-palette-values --turn {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 10;
 }
 
 @font-palette-values --turn-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #2CD3D3,
@@ -441,16 +441,16 @@
     25 #5BA4A4;
 }
 
-.turn              { font-family:'InconsolataProtein'; font-palette: --turn; }
-.turn-override     { font-family:'InconsolataProtein'; font-palette: --turn-override; }
+.turn              { font-family:'Protsolata'; font-palette: --turn; }
+.turn-override     { font-family:'Protsolata'; font-palette: --turn-override; }
 
 @font-palette-values --zappo {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 11;
 }
 
 @font-palette-values --zappo-override {
-  font-family: 'InconsolataProtein';
+  font-family: 'Protsolata';
   base-palette: 0;
   override-colors:
     0 #FFAFAF,
@@ -481,5 +481,5 @@
     25 #FFFFFF;
 }
 
-.zappo              { font-family:'InconsolataProtein'; font-palette: --zappo; }
-.zappo-override     { font-family:'InconsolataProtein'; font-palette: --zappo-override; }
+.zappo              { font-family:'Protsolata'; font-palette: --zappo; }
+.zappo-override     { font-family:'Protsolata'; font-palette: --zappo-override; }

@@ -9,7 +9,7 @@ from cu2qu.pens import Cu2QuPen
 
 SRC_FONT   = Path("Inconsolata-Regular.otf")
 SCHEMES    = Path("cleancolors.json")
-FONTNAME   = "InconsolataProtein"
+FONTNAME   = "Protsolata"
 BASE       = "clustal2"
 FALLBACK   = "#000000FF"
 OUT_WOFF   = f"{FONTNAME}.woff"
@@ -17,7 +17,8 @@ OUT_WOFF2  = f"{FONTNAME}.woff2"
 OUT_CSS    = f"{FONTNAME}_palettes.css"
 OUT_HTML   = f"{FONTNAME}_test.html"
 
-def blank(): return TTGlyphPen(None).glyph()
+def blank():
+    return TTGlyphPen(None).glyph()
 
 def to_quad(src_g):
     """cubic to quadratic"""
